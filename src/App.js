@@ -1,26 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import Acordion from './components/acordion';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div>
+            <Acordion
+                title="Ejemplo de acordion"
+                content="Lorem ipsum..."
+                bgColor="#000"
+            />
+            <Acordion
+                title="Porque universidad React"
+                content="El curso mas completo y actualizado de React, aprenderas desde nivel cero hasta conocer y dominar no solo React si no su core y podras crear componentes de calidad de produccion"
+            />
+            <Acordion
+                title="Ejemplo de acordion 3"
+                content="Lorem ipsum... 3"
+                bgColor="orangered"
+            />
+        </div>
+    );
 }
 
 export default App;
